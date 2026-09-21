@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Angular build output
+/dist/
+/.angular/
+
+# Lock files (optional if you do not want to track them)
+package-lock.json
+
+# OS / editor files
+.DS_Store
+Thumbs.db
