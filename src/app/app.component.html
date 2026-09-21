@@ -1,0 +1,37 @@
+<div class="aviation-dashboard">
+  <!-- Header Bar -->
+  <header class="dashboard-header">
+    <div class="header-brand">
+      <div class="brand-radar-icon">✈</div>
+      <div>
+        <h1 class="brand-title">SkyTrack Global Operations</h1>
+        <p class="brand-sub">Real-Time Oceanic & Continental Avionics Radar</p>
+      </div>
+    </div>
+    <div class="header-badges">
+      <span class="live-pulse-badge">LIVE RADAR ACTIVE</span>
+      <span class="version-badge">Angular 16.2 / CLI 22.1.8</span>
+    </div>
+  </header>
+
+  <!-- Operations KPI Cards -->
+  <app-kpi-metrics></app-kpi-metrics>
+
+  <!-- Multi-Criteria Filters Toolbar -->
+  <app-flight-filters></app-flight-filters>
+
+  <!-- Central Operations Stage -->
+  <main class="dashboard-main">
+    <div class="flight-list-container">
+      <app-flight-list></app-flight-list>
+    </div>
+
+    <div class="map-container">
+      <app-flight-map></app-flight-map>
+    </div>
+
+    <div class="details-container" *ngIf="flightService.selectedFlight$ | async as flight">
+      <app-flight-details [flight]="flight"></app-flight-details>
+    </div>
+  </main>
+</div>

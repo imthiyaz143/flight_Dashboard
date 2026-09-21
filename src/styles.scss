@@ -1,0 +1,16 @@
+/* Global Styles for Angular Project */
+@import 'leaflet/dist/leaflet.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #020617;
+  color: #f8fafc;
+}
