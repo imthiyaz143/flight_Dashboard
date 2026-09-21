@@ -8,6 +8,7 @@ import { FlightOperationsService } from './services/flight-operations.service';
 })
 export class AppComponent {
   title = 'Flight Tracking & Operations Dashboard';
+  selectedFlight$ = this.flightService.selectedFlight$;
 
   constructor(public flightService: FlightOperationsService) {}
 }

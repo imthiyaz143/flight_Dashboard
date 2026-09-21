@@ -9,8 +9,7 @@
       </div>
     </div>
     <div class="header-badges">
-      <span class="live-pulse-badge">LIVE RADAR ACTIVE</span>
-      <span class="version-badge">Angular 16.2 / CLI 22.1.8</span>
+      <span class="live-pulse-badge"> LIVE RADAR ACTIVE</span>
     </div>
   </header>
 
@@ -21,7 +20,7 @@
   <app-flight-filters></app-flight-filters>
 
   <!-- Central Operations Stage -->
-  <main class="dashboard-main">
+  <main class="dashboard-main" [class.has-details]="!!(selectedFlight$ | async)">
     <div class="flight-list-container">
       <app-flight-list></app-flight-list>
     </div>
@@ -30,7 +29,7 @@
       <app-flight-map></app-flight-map>
     </div>
 
-    <div class="details-container" *ngIf="flightService.selectedFlight$ | async as flight">
+    <div class="details-container" *ngIf="selectedFlight$ | async as flight">
       <app-flight-details [flight]="flight"></app-flight-details>
     </div>
   </main>
