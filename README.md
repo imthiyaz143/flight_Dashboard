@@ -1,5 +1,7 @@
 # Flight Tracking & Operations Dashboard
 
+<img width="1917" height="232" alt="image" src="https://github.com/user-attachments/assets/74fb453d-46ce-48b8-836d-6ecacc706029" />
+
 A responsive aviation operations dashboard built with Angular, RxJS, and Leaflet. The app presents live flight status, route visualization, and operational KPIs in a tactical command-center layout.
 
 ## Tech stack
@@ -18,6 +20,8 @@ Before running the project, make sure you have:
 - Node.js 18 or 20
 - npm 9+
 - Angular CLI 16.x
+<img width="627" height="536" alt="image" src="https://github.com/user-attachments/assets/08b16473-e33f-4ef8-a4b2-f737aa5d7e55" />
+
 
 ## Setup instructions
 
