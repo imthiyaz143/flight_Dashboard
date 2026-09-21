@@ -1,0 +1,17 @@
+# Code owners for automatic review requests.
+# GitHub CODEOWNERS uses GitHub usernames or teams, not email addresses.
+# Replace the GitHub handle below with the correct one for the repository owner.
+
+# Default owners for the whole repository
+* @shaikimthiyaz103
+
+# Frontend app owners
+/src/** @shaikimthiyaz103
+/src/app/** @shaikimthiyaz103
+
+# Documentation owners
+README.md @shaikimthiyaz103
+DESIGN.md @shaikimthiyaz103
+
+# If you use a team instead of individual handles, use this format:
+# * @your-org/flight-dashboard-team
